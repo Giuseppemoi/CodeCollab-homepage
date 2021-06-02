@@ -6,43 +6,57 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <img src="img/Fichier1.png" alt="logos" width="50"> active.collab
-            <nav id="nav-left">
-                <ul>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>More +</li>
-                </ul>
-            </nav>
-            <nav id="nav-right">
-                <ul>
-                    <li>Help & Support</li>
-                    <li>Blog</li>
-                    <li>Resources</li>
-                </ul>
-                <div id="Double-button">
+        <header class="main">
+            <div id="left">
+                <div class="child-header">
+                    <img src="img/Fichier1.png" alt="logos" width="50"> 
+                    <p>active.collab</p>
+                </div>
+
+                <nav class="child-header">
+                    <ul>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>More +</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="right">
+                <nav class="child-header">
+                    <ul>
+                        <li>Help & Support</li>
+                        <li>Blog</li>
+                        <li>Resources</li>
+                    </ul>
+                </nav>
+
+                <div class="child-header">
                     <button>Try It Free</button>
                     <button>Sign In</button>
                 </div>
-            </nav>
-            <h1>Powerful, yet simple project management tool</h1>
+            </div>
+
+            <h1 id="header-title">Powerful, yet simple project management tool</h1>
         </header>
         
-        <div>
-            <div id="task">
+        <div class="main" id="ban">
+            <div class="grey">
+                <img src="/img/Fichier2.png" alt="">
                 <h3>Task Management</h3>
                 <p>Stay organized with an advanced to-do list and track your project.</p>
             </div>
-            <div id="team">
+            <div class="grey">
+                <img src="/img/Fichier3.png" alt="">
                 <h3>Team Collaboration</h3>
                 <p>Efficiently work together with your team to deliver top-notch results.</p>
             </div>
-            <div id="time">
+            <div class="grey">
+                <img src="/img/Fichier4.png" alt="">
                 <h3>Time Tracking</h3>
                 <p>Track every minute of your work and bill clients accordingly.</p>
             </div>
-            <div id="invoicing">
+            <div class="grey">
+                <img src="/img/Fichier5.png" alt="">
                 <h3>Invoicing</h3>
                 <p>Easily issue invoices for your work save time, and get paid.</p>
             </div>
@@ -50,8 +64,9 @@
         
         <div id="tryitfree">
             <p>Active Collab helps your team stay organized when you outgrow email. <br>But it's so much more than that — with plenty of neat add-ons, it's a one-stop solution for all your business needs.</p>
-            <button>Try it free for 30 days!</button>
+            <button class="button">Try it free for 30 days!</button>
             <p>No credit card required, unsubscribe at any time.</p>
+            <img src="/img/Fichier6.png" alt="" width="800">
         </div>
 
         <div id="cloud">
@@ -60,14 +75,14 @@
             <div class="cloud">
                 <h3>Monthly Plans</h3>
                 <p>In the cloud <br>No setup required <br>Ready in 2 minutes</p>
-                <button>Plans & Pricing</button>
+                <button class="button">Plans & Pricing</button>
                 <p>from $25 / month</p>
             </div>
 
             <div class="cloud">
                 <h3>Self-Hosted</h3>
                 <p>Installs on your own server <br>Unlimited team members <br>One year of support included</p>
-                <button>Self-Hosted Pricing</button>
+                <button class="button">Self-Hosted Pricing</button>
                 <p>one time fee — from $999</p>
             </div>
         </div>

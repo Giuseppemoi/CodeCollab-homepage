@@ -6,23 +6,23 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="main">
+        <header>
             <div id="left">
-                <div class="child-header">
+                <div class="child-header" id="logo">
                     <img src="img/Fichier1.png" alt="logos" width="50"> 
                     <p>active.collab</p>
                 </div>
 
-                <nav class="child-header">
+                <nav class="child-header" id="space-right">
                     <ul>
                         <li>Features</li>
                         <li>Pricing</li>
-                        <li>More +</li>
+                        <li id="grey">More +</li>
                     </ul>
                 </nav>
             </div>
             <div id="right">
-                <nav class="child-header">
+                <nav class="child-header" id="space-left">
                     <ul>
                         <li>Help & Support</li>
                         <li>Blog</li>
@@ -30,16 +30,16 @@
                     </ul>
                 </nav>
 
-                <div class="child-header">
-                    <button>Try It Free</button>
-                    <button>Sign In</button>
+                <div class="child-header" id="button">
+                    <button class="button-blue" id="button-left">Try It Free</button>
+                    <button id="button-right">Sign In</button>
                 </div>
             </div>
 
             <h1 id="header-title">Powerful, yet simple project management tool</h1>
         </header>
         
-        <div class="main" id="ban">
+        <div class="main" id="banner">
             <div class="grey">
                 <img src="/img/Fichier2.png" alt="">
                 <h3>Task Management</h3>
@@ -63,121 +63,153 @@
         </div>
         
         <div id="tryitfree">
-            <p>Active Collab helps your team stay organized when you outgrow email. <br>But it's so much more than that — with plenty of neat add-ons, it's a one-stop solution for all your business needs.</p>
+            <p id="first">Active Collab helps your team stay organized when you outgrow email. <br>But it's so much more than that — with plenty of neat add-ons, it's a one-stop solution for all your business needs.</p>
             <button class="button">Try it free for 30 days!</button>
-            <p>No credit card required, unsubscribe at any time.</p>
+            <p id="second">No credit card required, unsubscribe at any time.</p>
             <img src="/img/Fichier6.png" alt="" width="800">
         </div>
 
         <div id="cloud">
-            <h2>On our cloud or your sever</h2>
-            <p>Active Collab runs in the cloud like most browser apps today, but you can also install it on your own server. Try it free for 30 days and then decide what works best for you.</p>
             <div class="cloud">
-                <h3>Monthly Plans</h3>
-                <p>In the cloud <br>No setup required <br>Ready in 2 minutes</p>
-                <button class="button">Plans & Pricing</button>
-                <p>from $25 / month</p>
+                <h2>On our cloud or your sever</h2>
+                <p>Active Collab runs in the cloud like most browser apps today, but you can also install it on your own server. Try it free for 30 days and then decide what works best for you.</p>
             </div>
+            <div class="plans">
+                <div>
+                    <img src="img/Fichier7.png" alt="">
+                    <h3>Monthly Plans</h3>
+                    <p>In the cloud <br>No setup required <br>Ready in 2 minutes</p>
+                    <button class="button">Plans & Pricing</button>
+                    <p>from $25 / month</p>
+                </div>
 
-            <div class="cloud">
-                <h3>Self-Hosted</h3>
-                <p>Installs on your own server <br>Unlimited team members <br>One year of support included</p>
-                <button class="button">Self-Hosted Pricing</button>
-                <p>one time fee — from $999</p>
+                <div>
+                    <img src="/img/Fichier8.png" alt="">
+                    <h3>Self-Hosted</h3>
+                    <p>Installs on your own server <br>Unlimited team members <br>One year of support included</p>
+                    <button class="button">Self-Hosted Pricing</button>
+                    <p>one time fee — from $999</p>
+                </div>
             </div>
         </div>
 
         <div id="users">
-            <h2>Who's using Active Collab?</h2>
-            <p>For more than 10 years, we've been trusted by over 200,000 people in companies ranging from small businesses to Fortune 500 members, universities and government institutions.</p>
+            <div id="who">
+                <h2>Who's using Active Collab?</h2>
+                <p>For more than 10 years, we've been trusted by over 200,000 people in companies ranging from small businesses to Fortune 500 members, universities and government institutions.</p>
+            </div>
+            <div id="img-users">
+                <img src="https://adrienlenoir.github.io/reproduce-activecollab-exercice/images/harvard_university.svg" alt="">
+                <img src="https://adrienlenoir.github.io/reproduce-activecollab-exercice/images/intel.svg" alt="">
+                <img src="https://adrienlenoir.github.io/reproduce-activecollab-exercice/images/ogilvy.svg" alt="">
+                <img src="https://adrienlenoir.github.io/reproduce-activecollab-exercice/images/adobe.svg" alt="">
+                <img src="https://adrienlenoir.github.io/reproduce-activecollab-exercice/images/publicis.svg" alt="">
+                <img src="https://adrienlenoir.github.io/reproduce-activecollab-exercice/images/apple.svg" alt="">
+                <img src="https://adrienlenoir.github.io/reproduce-activecollab-exercice/images/slack.svg" alt="">
+            </div>
         </div>
 
         <div id="get-started">
             <h1>Get started with Active Collab</h1>
             <p>Enter your details to get a month of Active Collab absolutely free, without any limitations.</p>
             <form action="input">
-                <input type="name">
-                <input type="email">
-                <input type="password">
-                <button>Start my free month!</button>
-                <p>Hope you'll enjoy it!</p>
+                <label>Your Name or Organization</label>
+                <input type="name" value="Enter name or organisation">
+                <label>Email</label>
+                <input type="email" value="name@organization.com">
+                <label>Password</label>
+                <input type="password" value="The longer, the stronger">
+                <div>
+                    <button>Start my free month!</button>
+                    <p>Hope you'll enjoy it!</p>
+                </div>
             </form>
-            <p>Your data is safe with us.</p>
-            <a href="">Active Collab security</a>
+            <div>
+                <p>Your data is safe with us.</p>
+                <a href="">Active Collab security</a>
+            </div>
         </div>
 
         <footer>
-            <nav>
-                <ul>
-                    <li>Pruduct</li>
-                    <li>Feature</li>
-                    <li>All Feature</li>
-                    <li>Pricing</li>
-                    <li>Add-Ons</li>
-                    <li>Roadmap</li>
-                    <li>Timer</li>
-                    <li>Mobile Apps</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>Alternative</li>
-                    <li>Best Project Management Tools Comparison</li>
-                    <li>Basecamp Alternative</li>
-                    <li>Trello Alternative</li>
-                    <li>Asana Alternative</li>
-                    <li>Teamwork Alternative</li>
-                    <li>Wrike Alternative</li>
-                    <li>JIRA Alternative</li>
-                    <li>MS Project Alternative</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>Solution</li>
-                    <li>Self-Hosted Project Management</li>
-                    <li>Task Management</li>
-                    <li>Project Management</li>
-                    <li>Team Collabaration</li>
-                    <li>Team Management</li>
-                    <li>Client Management</li>
-                    <li>Time Tracking</li>
-                    <li>Invoicing</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>For Teams</li>
-                    <li>Marketing</li>
-                    <li>Designers</li>
-                    <li>Web Design</li>
-                    <li>Web Development</li>
-                    <li>Startups</li>
-                    <li>SEO Agencies</li>
-                    <li>Small Business</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>Compagny</li>
-                    <li>About & Contact</li>
-                    <li>Careers</li>
-                    <li>Privecy Policy</li>
-                    <li>Terms of Service</li>
-                    <li>Security</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>Resources</li>
-                    <li>Project Management Guides</li>
-                    <li>Blog</li>
-                    <li>Newsletter</li>
-                    <li>Help & Support</li>
-                </ul>
-            </nav>
-            <div id="social"></div>
-            <p>Happy collaborating! <br>© 2007-2017 Active Collab</p>
+            <div id="tree">
+                <nav>
+                    <ul>
+                        <li class="first">Pruduct</li>
+                        <li>Feature</li>
+                        <li>All Feature</li>
+                        <li>Pricing</li>
+                        <li>Add-Ons</li>
+                        <li>Roadmap</li>
+                        <li>Timer</li>
+                        <li>Mobile Apps</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li class="first">Alternative</li>
+                        <li>Best Project Management Tools Comparison</li>
+                        <li>Basecamp Alternative</li>
+                        <li>Trello Alternative</li>
+                        <li>Asana Alternative</li>
+                        <li>Teamwork Alternative</li>
+                        <li>Wrike Alternative</li>
+                        <li>JIRA Alternative</li>
+                        <li>MS Project Alternative</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li class="first">Solution</li>
+                        <li>Self-Hosted Project Management</li>
+                        <li>Task Management</li>
+                        <li>Project Management</li>
+                        <li>Team Collabaration</li>
+                        <li>Team Management</li>
+                        <li>Client Management</li>
+                        <li>Time Tracking</li>
+                        <li>Invoicing</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li class="first">For Teams</li>
+                        <li>Marketing</li>
+                        <li>Designers</li>
+                        <li>Web Design</li>
+                        <li>Web Development</li>
+                        <li>Startups</li>
+                        <li>SEO Agencies</li>
+                        <li>Small Business</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li class="first">Compagny</li>
+                        <li>About & Contact</li>
+                        <li>Careers</li>
+                        <li>Privecy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Security</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li class="first">Resources</li>
+                        <li>Project Management Guides</li>
+                        <li>Blog</li>
+                        <li>Newsletter</li>
+                        <li>Help & Support</li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="social">
+                <img src="/img/Fichier9.png" alt="">
+                <img src="/img/Fichier10.png" alt="">
+                <img src="/img/Fichier11.png" alt="">
+                <img src="/img/Fichier12.png" alt="">
+                <img src="/img/Fichier13.png" alt="">
+            </div>
+            <div id="last"><p>Happy collaborating! <br>© 2007-2017 Active Collab</p></div>
         </footer>
     </body>
 </html>

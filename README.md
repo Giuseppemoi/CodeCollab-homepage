@@ -7,7 +7,7 @@
 
 Exercice sur le HTML & CSS, visant à reproduire le plus fidèlement possible un mockup (ci-dessous).
 
-![Mockup](img/activecollab.png)
+![Mockup](assets/img/activecollab.png)
 
 ## Voir le projet
 

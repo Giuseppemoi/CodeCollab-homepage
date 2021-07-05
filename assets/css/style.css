@@ -15,6 +15,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header h1 {
@@ -25,10 +28,12 @@ header h1 {
   padding: 50px 0;
 }
 
-header .child-header, header .child-header ul, header #left ul, header #right ul, header #left, header #right {
+header .child-header, header .child-header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -42,12 +47,14 @@ header .child-header, header .child-header ul, header #left ul, header #right ul
           flex-grow: 1;
 }
 
-header .child-header ul #grey, header #left ul ul #grey, header #right ul ul #grey, header #left ul #grey, header #right ul #grey {
+header #grey {
   color: grey;
 }
 
-header p {
-  font-size: x-large;
+div#logo.child-header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 #button {
@@ -76,11 +83,7 @@ header p {
           justify-content: space-between;
 }
 
-#logo {
-  margin-bottom: 10px;
-}
-
-.child-header button, header .child-header ul button, header #left ul button, header #right ul button {
+.child-header button, header .child-header ul button {
   font-size: 12px;
   padding: 5px 15px;
 }
@@ -104,7 +107,7 @@ header p {
 
 /*part two*/
 #banner {
-  height: 300px;
+  height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,20 +128,12 @@ header p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
+  width: 15rem;
   margin: auto;
-  border-left: black 1px solid;
-  height: 300px;
-  padding-left: 50px;
-}
-
-#banner div:first-child {
-  border: none;
-  padding: 0;
 }
 
 #banner img {
-  width: 100px;
+  width: 7rem;
 }
 
 #banner h3 {
@@ -154,9 +149,14 @@ header p {
   margin-top: 15px;
 }
 
+#banner hr {
+  border-color: #444444;
+}
+
 /*Part Three*/
 #tryitfree {
-  height: 700px;
+  overflow: hidden;
+  height: 36rem;
   background-color: #e9edf2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,8 +197,8 @@ header p {
 
 #tryitfree img {
   border-radius: 5px 5px 0 0;
-  -webkit-box-shadow: 1px -1px 10px #afaeae, -1px -1px 10px #afaeae;
-          box-shadow: 1px -1px 10px #afaeae, -1px -1px 10px #afaeae;
+  -webkit-box-shadow: 1px -1px 10px #afaeae, -1px 0 10px #afaeae;
+          box-shadow: 1px -1px 10px #afaeae, -1px 0 10px #afaeae;
   width: 600px;
 }
 
@@ -221,6 +221,7 @@ header p {
 }
 
 #cloud .cloud {
+  margin-bottom: 1rem;
   text-align: center;
   width: 500px;
 }
@@ -239,13 +240,15 @@ header p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 25rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #cloud .plans div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +262,7 @@ header p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 250px;
+  height: 15rem;
 }
 
 #cloud .plans div button {
@@ -272,11 +275,6 @@ header p {
   font-size: 10px;
 }
 
-#cloud .plans div:first-child {
-  border-right: #e0dfdf 1px solid;
-  padding-right: 35px;
-}
-
 #cloud .plans div p {
   text-align: center;
   font-family: serif;
@@ -286,6 +284,10 @@ header p {
 
 #cloud .plans img {
   width: 100px;
+}
+
+#cloud .plans hr {
+  border-color: white;
 }
 
 /*Part Five*/
@@ -361,6 +363,10 @@ header p {
           align-items: center;
 }
 
+#get-started .space {
+  padding-bottom: 1.5rem;
+}
+
 #get-started h1 {
   font-size: 25px;
   font-weight: lighter;
@@ -372,7 +378,6 @@ header p {
   width: 300px;
   text-align: center;
   color: #4d4c4c;
-  padding-bottom: 25px;
 }
 
 #get-started form {
@@ -387,37 +392,32 @@ header p {
   padding: 20px;
   border: #adacac 1px solid;
   border-radius: 3px;
-  width: 333px;
-  height: 280px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 20rem;
+  height: 17rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#get-started form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #get-started form input {
   border: #adacac 1px solid;
-  border-radius: 3px;
-  height: 25px;
+  border-radius: .1rem;
+  height: 1.5rem;
   color: #adacac;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#get-started form input[value] {
-  padding: 5px 5px;
-}
-
-#get-started form label:first-child {
-  padding-top: 50px;
 }
 
 #get-started form label {
   font-size: 11px;
-}
-
-#get-started form label, #get-started form input, #get-started form button, #get-started form p {
-  padding-top: 15px;
 }
 
 #get-started form button {
@@ -429,6 +429,7 @@ header p {
   width: 142px;
   font-size: 11px;
   padding: 5px 0;
+  margin: .5rem 0;
 }
 
 #get-started form p:last-child {
@@ -448,7 +449,7 @@ header p {
           align-items: center;
 }
 
-#get-started div:last-child {
+#get-started div.lst {
   padding: 25px 0;
   font-size: 10px;
   color: grey;

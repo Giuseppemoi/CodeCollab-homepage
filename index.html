@@ -4,37 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>active.collab</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
         <header>
-            <div id="left">
-                <div class="child-header" id="logo">
-                    <img src="img/Fichier1.png" alt="logos" width="50"> 
-                    <p>active.collab</p>
-                </div>
-
-                <nav class="child-header" id="space-right">
-                    <ul>
-                        <li>Features</li>
-                        <li>Pricing</li>
-                        <li id="grey">More +</li>
-                    </ul>
-                </nav>
+            <div class="child-header" id="logo">
+                <img src="assets/img/Fichier1.png" alt="logos" width="50"> 
+                <p>active.collab</p>
             </div>
-            <div id="right">
-                <nav class="child-header" id="space-left">
-                    <ul>
-                        <li>Help & Support</li>
-                        <li>Blog</li>
-                        <li>Resources</li>
-                    </ul>
-                </nav>
 
-                <div class="child-header" id="button">
-                    <button class="button-blue" id="button-left">Try It Free</button>
-                    <button id="button-right">Sign In</button>
-                </div>
+            <nav class="child-header" id="space-right">
+                <p>Features</p>
+                <p>Pricing</p>
+                <p id="grey">More +</p>
+            </nav>
+
+            <nav class="child-header" id="space-left">
+                <p>Help & Support</p>
+                <p>Blog</p>
+                <p>Resources</p>
+            </nav>
+
+            <div class="child-header" id="button">
+                <button class="button-blue" id="button-left">Try It Free</button>
+                <button id="button-right">Sign In</button>
             </div>
 
             <h1 id="header-title">Powerful, yet simple project management tool</h1>
@@ -42,22 +35,25 @@
         
         <div class="main" id="banner">
             <div class="grey">
-                <img src="img/Fichier2.png" alt="">
+                <img src="assets/img/Fichier2.png" alt="">
                 <h3>Task Management</h3>
                 <p>Stay organized with an advanced to-do list and track your project.</p>
             </div>
+            <hr>
             <div class="grey">
-                <img src="img/Fichier3.png" alt="">
+                <img src="assets/img/Fichier3.png" alt="">
                 <h3>Team Collaboration</h3>
                 <p>Efficiently work together with your team to deliver top-notch results.</p>
             </div>
+            <hr>
             <div class="grey">
-                <img src="img/Fichier4.png" alt="">
+                <img src="assets/img/Fichier4.png" alt="">
                 <h3>Time Tracking</h3>
                 <p>Track every minute of your work and bill clients accordingly.</p>
             </div>
+            <hr>
             <div class="grey">
-                <img src="img/Fichier5.png" alt="">
+                <img src="assets/img/Fichier5.png" alt="">
                 <h3>Invoicing</h3>
                 <p>Easily issue invoices for your work save time, and get paid.</p>
             </div>
@@ -67,7 +63,7 @@
             <p id="first">Active Collab helps your team stay organized when you outgrow email. <br>But it's so much more than that — with plenty of neat add-ons, it's a one-stop solution for all your business needs.</p>
             <button class="button">Try it free for 30 days!</button>
             <p id="second">No credit card required, unsubscribe at any time.</p>
-            <img src="img/Fichier6.png" alt="" width="800">
+            <img src="assets/img/Fichier6.png" alt="" width="800">
         </div>
 
         <div id="cloud">
@@ -77,15 +73,15 @@
             </div>
             <div class="plans">
                 <div>
-                    <img src="img/Fichier7.png" alt="">
+                    <img src="assets/img/Fichier7.png" alt="">
                     <h3>Monthly Plans</h3>
                     <p>In the cloud <br>No setup required <br>Ready in 2 minutes</p>
                     <button class="button">Plans & Pricing</button>
                     <p>from $25 / month</p>
                 </div>
-
+                <hr>
                 <div>
-                    <img src="img/Fichier8.png" alt="">
+                    <img src="assets/img/Fichier8.png" alt="">
                     <h3>Self-Hosted</h3>
                     <p>Installs on your own server <br>Unlimited team members <br>One year of support included</p>
                     <button class="button">Self-Hosted Pricing</button>
@@ -112,23 +108,31 @@
 
         <div id="get-started">
             <h1>Get started with Active Collab</h1>
-            <p>Enter your details to get a month of Active Collab absolutely free, without any limitations.</p>
+            <p class="space">Enter your details to get a month of Active Collab absolutely free, without any limitations.</p>
             <form action="input">
-                <label>Your Name or Organization</label>
-                <input type="name" value="Enter name or organisation">
-                <label>Email</label>
-                <input type="email" value="name@organization.com">
-                <label>Password</label>
-                <input type="password" value="The longer, the stronger">
-                <div>
-                    <button>Start my free month!</button>
-                    <p>Hope you'll enjoy it!</p>
+                <div class="form">
+                    <label>Your Name or Organization</label>
+                    <input type="name" placeholder="Enter name or organisation">
                 </div>
+                <div class="form">
+                    <label>Email</label>
+                    <input type="email" placeholder="name@organization.com"> 
+                </div>
+                <div class="form">
+                    <label>Password</label>
+                    <input type="password" placeholder="The longer, the stronger">
+                </div>
+                <div class="center">
+                    <button>Start my free month!</button>
+                    <p class="data">Hope you'll enjoy it!</p>
+                </div>
+                
             </form>
-            <div>
-                <p>Your data is safe with us.</p>
+            <div class="lst">
+                <p class="data">Your data is safe with us.</p>
                 <a href="">Active Collab security</a>
             </div>
+            
         </div>
 
         <footer>
@@ -204,13 +208,13 @@
                 </nav>
             </div>
             <div id="social">
-                <img src="img/Fichier9.png" alt="">
-                <img src="img/Fichier10.png" alt="">
-                <img src="img/Fichier11.png" alt="">
-                <img src="img/Fichier12.png" alt="">
-                <img src="img/Fichier13.png" alt="">
+                <img src="assets/img/Fichier9.png" alt="">
+                <img src="assets/img/Fichier10.png" alt="">
+                <img src="assets/img/Fichier11.png" alt="">
+                <img src="assets/img/Fichier12.png" alt="">
+                <img src="assets/img/Fichier13.png" alt="">
             </div>
-            <div id="last"><p>Happy collaborating! <br>© 2007-2017 Active Collab</p></div>
+            <div id="last"><p>Happy collaborating!<br>© 2007-2017 Active Collab</p></div>
         </footer>
     </body>
 </html>

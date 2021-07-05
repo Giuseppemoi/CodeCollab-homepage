@@ -108,13 +108,6 @@ div#logo.child-header{
         align-items: center;
         width: 15rem;
         margin: auto;
-        //border-left: black 1px solid;
-        //height: 300px;
-        //padding-left: 50px;
-        // &:first-child{
-        //     border: none;
-        //     padding: 0;
-        // }
     }
     img{
         width: 7rem;
@@ -132,9 +125,6 @@ div#logo.child-header{
     }
     hr{
         border-color: rgb(68, 68, 68);
-        // height: 1px;
-        // background-color: #000000;
-        // border: none;
     }
 }
 
@@ -270,9 +260,6 @@ div#logo.child-header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    // p.data{
-    //     margin: 2rem 0;
-    // }
     .space{
         padding-bottom: 1.5rem;
     }
@@ -286,7 +273,6 @@ div#logo.child-header{
         width: 300px;
         text-align: center;
         color: rgb(77, 76, 76);
-        //padding-bottom: 25px;
     }
     form{
         background-color: $base-grey;
@@ -307,20 +293,10 @@ div#logo.child-header{
             border-radius: .1rem;
             height: 1.5rem;
             color: rgb(173, 172, 172);
-            //display: flex;
-            // &[value]{
-            //     padding: 5px 5px;
-            // }
         }
-        // label:first-child{
-        //     padding-top: 50px;
-        // }
         label{
             font-size: 11px;
         }
-        // label, input, button, p{
-        //     padding-top: 15px;
-        // }
         button{
             @include button();
             width: 142px;
